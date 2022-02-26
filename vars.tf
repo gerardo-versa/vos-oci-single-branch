@@ -17,3 +17,35 @@ variable "region" {
 variable "private_key_path" {
   description = "Path to the Private Key"
 }
+
+variable "par_compartment_id" {
+  description = "ID of the parent compartment"
+}
+
+variable "compartment_description" {
+  description = ""
+}
+
+variable "compartment_name" {
+  description = ""
+}
+
+variable "vcn_cidr_block" {
+  description = ""
+}
+
+variable "vcn_display_name" {
+  description = ""
+}
+
+variable "mgmt_cidr_block" {
+  description = "LAN CIDR Block. Needs to be included in the VCN block"
+}
+
+variable "wan_cidr_block" {
+  description = "LAN CIDR Block. Needs to be included in the VCN block"
+}
+
+variable "lan_cidr_block" {
+  description = "LAN CIDR Block. Needs to be included in the VCN block"
+}
