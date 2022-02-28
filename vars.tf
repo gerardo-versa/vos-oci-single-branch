@@ -49,3 +49,19 @@ variable "wan_cidr_block" {
 variable "lan_cidr_block" {
   description = "LAN CIDR Block. Needs to be included in the VCN block"
 }
+
+variable instance_availability_domain {
+  description = "Availability domain for the desired instance"
+}
+
+variable "instance_shape" {
+  description = "Shape for the required instance"
+}
+
+variable "instance_name" {
+  description = "name for the VOS instance"
+}
+
+variable "ssh_public_key_file" {
+  default = "~/.ssh/id_rsa.pub"
+}
